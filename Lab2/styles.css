@@ -63,7 +63,13 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 0em;
+  margin: 0em;
+  font-weight: 500;
 }
 
 /* end Grid Part 1 */
