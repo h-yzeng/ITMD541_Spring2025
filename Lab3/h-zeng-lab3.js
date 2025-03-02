@@ -39,7 +39,6 @@ console.log("Original Array:", [9, 4, 6, 2], ", Sorted Array:", sortNumbers([9, 
 console.log("Original Array:", [2, 3, 5, 1], ", Sorted Array:", sortNumbers([2, 3, 5, 1]));
 console.log("Original Array:", [8, 5, 7, 2], ", Sorted Array:", sortNumbers([8, 5, 7, 2]));
 
-
 // Exercise 4
 
 
