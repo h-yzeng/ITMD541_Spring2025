@@ -13,6 +13,7 @@ function minMaxAverage(numbers) {
 // Test Cases - Exercise 1
 minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1]);
 minMaxAverage([1, 5, 3, 5, 10, 12, 8, 6]);
+minMaxAverage([1, 2, 3, 4, 5, 6, 7, 8]);
 minMaxAverage([2, 4, 6, 8, 10, 12, 14, 16]);
 
 // Exercise 2
@@ -34,14 +35,23 @@ function sortNumbers(numbers) {
     return [...numbers].sort((a, b) => a - b);
 }
 
-// Test cases for Exercise 3
+// Test Cases - Exercise 3
 console.log("Original Array:", [9, 4, 6, 2], ", Sorted Array:", sortNumbers([9, 4, 6, 2]));
 console.log("Original Array:", [2, 3, 5, 1], ", Sorted Array:", sortNumbers([2, 3, 5, 1]));
 console.log("Original Array:", [8, 5, 7, 2], ", Sorted Array:", sortNumbers([8, 5, 7, 2]));
 
 // Exercise 4
+function celsiusToFahrenheit(celsius) {
+    const c = parseFloat(celsius);
+    const f = (c * 9/5) + 32;
+    console.log(`${c.toFixed(1)} Celsius = ${f.toFixed(1)} Fahrenheit`);
+}
 
-
+// Test Cases - Exercise 4
+celsiusToFahrenheit(0);
+celsiusToFahrenheit(-40);
+celsiusToFahrenheit("100");
+celsiusToFahrenheit("37");
 
 // Exercise 5
 
