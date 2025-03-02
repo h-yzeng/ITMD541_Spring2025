@@ -50,9 +50,40 @@ function celsiusToFahrenheit(celsius) {
 // Test Cases - Exercise 4
 celsiusToFahrenheit(0);
 celsiusToFahrenheit(-40);
+celsiusToFahrenheit("35");
 celsiusToFahrenheit("100");
 celsiusToFahrenheit("37");
 
 // Exercise 5
+function sortPeople(people) {
+    return people.toSorted((a, b) => a.age - b.age).map(({ name, age, city }) => `${name} is ${age} and from ${city}`);
+}
 
+// Test Cases - Exercise 5
+const people1 = [
+    {name: 'James', age: 32, city: 'New York'},
+    {name: 'Mary', age: 29, city: 'Los Angeles'},
+    {name: 'John', age: 23, city: 'Chicago'},
+    {name: 'Patricia', age: 28, city: 'Houston'},
+    {name: 'Robert', age: 34, city: 'Phoenix'}
+];
 
+const people2 = [
+    {name: 'Michael', age: 30, city: 'Philadelphia'},
+    {name: 'Linda', age: 27, city: 'San Antonio'},
+    {name: 'William', age: 33, city: 'San Diego'},
+    {name: 'Barbara', age: 31, city: 'Dallas'},
+    {name: 'David', age: 29, city: 'San Jose'}
+];
+
+const people3 = [
+    {name: 'Richard', age: 36, city: 'Austin'},
+    {name: 'Susan', age: 28, city: 'Jacksonville'},
+    {name: 'Joseph', age: 32, city: 'Fort Worth'},
+    {name: 'Karen', age: 30, city: 'Columbus'},
+    {name: 'Thomas', age: 35, city: 'Charlotte'}
+];
+
+console.log(sortPeople(people1));
+console.log(sortPeople(people2));
+console.log(sortPeople(people3));
