@@ -41,12 +41,21 @@
     document.querySelector('[data-icon="digital"]').textContent = 'ads_click';
 })();
 
-
 //9. In the specialized marketing solutions section make a change to the layout of the tiles
-
+(function () {
+    document.head.insertAdjacentHTML('beforeend', `<style>
+        @media (min-width: 1024px) {
+            [data-section="product_cards"] {
+                grid-template-columns: repeat(4, 1fr) !important;
+            }
+        }
+    </style>`);
+})();
 
 //10. In the same section change the Musicians image 
-
+(function () {
+    document.querySelectorAll('.product_card img')[3].src = 'https://picsum.photos/id/453/400/300';
+})();
 
 // Graduate Additional Requirements
 
