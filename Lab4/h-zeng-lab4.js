@@ -2,8 +2,21 @@
 // ITMD 541-02 Graduate Student
 
 //1. In the hero section change the main headline
+(function () {
+    const mainHeadline = document.querySelector('#hero h1');
+    if (mainHeadline) {
+        mainHeadline.textContent = 'Uplift Your Brand with Stellar Marketing';
+    }
+})();
 
 //2. Change the line of text below the hero headline 
+(function () {
+    const headlineSubtext = document.querySelector('#hero p');
+    if (headlineSubtext) {
+        headlineSubtext.innerHTML =
+        'Utilize cutting-edge strategies from Stellar Marketing to help your business <strong><em>thrive</em></strong> and <strong><em>excel</em></strong>.';
+    }
+})();
 
 //3. Change the image in the background of the hero
 
