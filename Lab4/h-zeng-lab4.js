@@ -58,4 +58,12 @@
 })();
 
 // Graduate Additional Requirements
-
+(function () {
+    document.querySelector('#contact form').addEventListener('submit', e => {
+        e.preventDefault();
+        const f = e.target;
+        alert(f.name.value && f.email.value
+            ? `Thank you, ${f.name.value}! We will be in touch with you shortly at ${f.email.value}.`
+            : 'Please provide a name and email.');
+    });
+})();
