@@ -14,9 +14,8 @@
         <p>1 USD = €0.95 EUR for Euros</p>
         <p>1 USD = ₹85 INR for Rupees</p>
       </div>
-
       <form>
-        <label for="bill-total">Bill Total: $</label>
+        <label for="bill-total">Bill Total ($ USD): </label>
         <input type="text" id="bill-total" name="bill-total" />
 
         <label for="total-tax">Total Bill with Tax (11%):</label>
@@ -28,21 +27,18 @@
           <option value="eur">Euros (€)</option>
           <option value="inr">Indian Rupees (₹)</option>
         </select>
-
-        <label for="tip-slider">Tip:</label>
         <div class="tip-row">
+          <label for="tip-slider">Tip:</label>
           <input type="range" id="tip-slider" name="tip-slider" min="0" max="100" />
-          <span id="tip-value">0</span>
+          <span id="tip-value">0%</span>
         </div>
 
-        <label for="converted-tip">Converted Tip Amount</label>
+        <label for="converted-tip">Converted Tip Amount:</label>
         <input type="text" id="converted-tip" name="converted-tip" disabled />
 
-        <label for="converted-total">Converted Total Bill with Tip and Tax</label>
+        <label for="converted-total">Converted Total Bill with Tip and Tax:</label>
         <input type="text" id="converted-total" name="converted-total" disabled />
       </form>
-
-      <p id="error-msg"></p>
     </main>
     <script src="script.js"></script>
   </body>
