@@ -112,19 +112,19 @@ input[type="range"] {
   font-size: 1.0rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .container {
-    padding: 1.2rem;
+    padding: 1.25rem;
   }
 
   label,
   #conversion-info p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   input,
   select {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   #tip-value {
