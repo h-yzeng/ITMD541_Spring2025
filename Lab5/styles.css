@@ -38,3 +38,96 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:disabled {
+  background-color: #eeeeee;
+  color: #333333;
+  font-weight: 600;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.tip-row {
+  background-color: #bbbbbb;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5em;
+}
+
+.tip-row label {
+  margin: 0;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.tip-row input[type="range"] {
+  flex-grow: 1;
+  appearance: none;
+  height: 6px;
+  background: #ebebeb;
+  border-radius: 5px;
+  outline: none;
+}
+
+#tip-value {
+  min-width: 3rem;
+  text-align: center;
+  font-weight: 600;
+  color: #222222;
+  background-color: #dddddd;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+#error-msg {
+  margin-top: 1rem;
+  color: red;
+  text-align: center;
+  font-size: 1.0rem;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  label,
+  #conversion-info p {
+    font-size: 0.95rem;
+  }
+
+  input,
+  select {
+    font-size: 0.95rem;
+  }
+
+  #tip-value {
+    font-size: 1rem;
+  }
+}
