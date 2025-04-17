@@ -73,3 +73,8 @@ function calculate() {
 }
 
 form.addEventListener("input", calculate);
+
+tipSlider.addEventListener("input", () => {
+  const percent = ((tipSlider.value - tipSlider.min) / (tipSlider.max - tipSlider.min)) * 100;
+  tipSlider.style.setProperty("--val", `${percent}%`);
+});
