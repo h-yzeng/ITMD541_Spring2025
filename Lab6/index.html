@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunrise and Sunset Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Sunrise and Sunset Dashboard</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="control-container">
+        <form id="locationForm">
+          <label for="locationSelect">Choose a Location:</label>
+          <select id="locationSelect" aria-label="Please choose a location"></select>
+          <button type="button" id="locationButton">Use My Current Location</button>
+        </form>
+      </section>
+
+      <section id="error" class="hidden-container">
+        <p role="alert">⚠️ Unable to fetch data. Please try again.</p>
+      </section>
+
+      <section id="results" class="section-container">
+        <div class="day-section" id="todaySection">
+          <h2>Today</h2>
+          <div class="data-grid"></div>
+        </div>
+
+        <div class="day-section" id="tomorrowSection">
+          <h2>Tomorrow</h2>
+          <div class="data-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Sunrise Dashboard</p>
+        <p class="api-credit">
+          Powered by
+          <a href="https://sunrisesunset.io/api/" target="_blank" rel="noopener">SunriseSunset.io</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
