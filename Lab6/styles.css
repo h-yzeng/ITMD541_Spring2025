@@ -32,9 +32,13 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 700px;
+  margin-right: 0.5em;
+  font-weight: bold;
 }
+
 
 #locationSelect,
 #locationButton {
@@ -94,4 +98,29 @@ body {
   margin: 0;
   font-size: 1rem;
   color: #444444;
+}
+
+.hidden-container {
+  display: none;
+}
+
+#error {
+  background-color: #ffe5e5;
+  color: #b30000;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid #ff9999;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.data-grid p {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
 }
