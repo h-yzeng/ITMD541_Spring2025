@@ -120,7 +120,31 @@ body {
 
 .data-grid p {
   text-align: center;
-  font-style: italic;
   font-size: 1rem;
   color: #555;
 }
+
+.footer-container {
+  background-color: #003366;
+  color: #eeeeee;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.footer-container p {
+  margin: 0.25rem 0;
+}
+
+.api-credit a {
+  color: #99ccff;
+  text-decoration: underline;
+}
+
+.api-credit a:hover {
+  color: #ffffff;
+}
+
