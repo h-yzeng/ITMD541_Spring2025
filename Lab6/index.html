@@ -9,39 +9,46 @@
   <body>
     <header>
       <div class="header-container">
-        <h1>Sunrise and Sunset Dashboard</h1>
+        <h1>☀️ Sunrise and Sunset Dashboard</h1>
       </div>
     </header>
 
     <main>
-      <section class="control-container">
-        <form id="locationForm">
-          <label for="locationSelect">Choose a Location:</label>
-          <select id="locationSelect" aria-label="Please choose a location"></select>
-          <button type="button" id="locationButton">Use My Current Location</button>
-        </form>
-      </section>
+      <div class="main-container">
+        <section class="control-container">
+          <form id="locationForm">
+            <label for="locationSelect">Choose a Location:</label>
+            <select id="locationSelect" aria-label="Please choose a location">
+              <option value="" selected disabled>-- Select a location --</option>
+            </select>
+            <button type="button" id="locationButton">Use My Current Location</button>
+          </form>
+        </section>
 
-      <section id="error" class="hidden-container">
-        <p role="alert">⚠️ Unable to fetch data. Please try again.</p>
-      </section>
+        <section id="error" class="hidden-container">
+          <p role="alert">⚠️ Unable to fetch data. Please try again.</p>
+        </section>
 
-      <section id="results" class="section-container">
-        <div class="day-section" id="todaySection">
-          <h2>Today</h2>
-          <div class="data-grid"></div>
-        </div>
+        <section id="results" class="section-container">
+          <div class="day-section" id="todaySection">
+            <h2>Today</h2>
+            <div class="data-grid">
+              <p class="placeholder-message">Please select a location to see sunrise and sunset data.</p>
+            </div>
+          </div>
 
-        <div class="day-section" id="tomorrowSection">
-          <h2>Tomorrow</h2>
-          <div class="data-grid"></div>
-        </div>
-      </section>
+          <div class="day-section" id="tomorrowSection">
+            <h2>Tomorrow</h2>
+            <div class="data-grid">
+              <p class="placeholder-message">Please select a location to see sunrise and sunset data.</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
       <div class="footer-container">
-        <p>&copy; 2025 Sunrise Dashboard</p>
         <p class="api-credit">
           Powered by
           <a href="https://sunrisesunset.io/api/" target="_blank" rel="noopener">SunriseSunset.io</a>
